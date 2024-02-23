@@ -1,7 +1,6 @@
 from requests import get
 from pprint import PrettyPrinter
 from tkinter import *
-from PIL import Image,ImageTk
 from tkinter import messagebox
 import os
 from dotenv import load_dotenv
