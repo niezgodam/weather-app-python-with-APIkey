@@ -69,7 +69,7 @@ window.resizable(False, False)
 window.geometry(f"{window_width}x{window_height}+{x}+{y}")
 window.title("WeatherAPP")
 
-backgroundImage = PhotoImage(file=f"{os.getenv('THUNDERSTORM_PATH')}")
+backgroundImage = PhotoImage(file=f"{os.getenv('BACKGROUND_PATH')}")
 background = Label(window, image=backgroundImage)
 background.place(x=0, y=0)
 
