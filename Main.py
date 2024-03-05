@@ -46,6 +46,8 @@ def search():
         imageweather = PhotoImage(file=f"{os.getenv('CLEAR_SNOW')}", height=500)
     elif "thunderstorm" in weather_desc:
         imageweather = PhotoImage(file=f"{os.getenv('THUNDERSTORM_PATH')}", height=500)
+    elif "fog" in weather_desc:
+        imageweather = PhotoImage(file=f"{os.getenv('MIST_PATH')}", height=500)
 
     new_label = Label(window, image=imageweather, width=600, height=500,compound="top")
     new_label.image = imageweather  
